@@ -22,13 +22,14 @@ function saveToDos(){
 }
 
 function paintToDo(text){
-    //li 란?
+    //ul태그 는 unordered list의 약자로, 순서가 필요 없는 목록을 만듬
+    //li 란? list item의 약자로, ul안의 각 항목을 나열
     const li = document.createElement("li");
     const delBtn = document.createElement("button");
-    //span 이란?
+    //span 이란? 문장 단위로 텍스트 영역을 지정하는 것
     const span = document.createElement("span");
     const newId = toDos.length + 1;
-    //innerText 란?
+    //innerText 란? element 안의 text 값들만 가져온다.
     delBtn.innerText = "❌";
     delBtn.addEventListener("click", deleteToDo);
     span.innerText = text;
